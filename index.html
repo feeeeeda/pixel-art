@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+    <title>Pixels Art</title>
+  </head>
+  <body>
+    <h1 id="title">Pixel Art</h1>
+    <div id="color-palette">
+      <div class="color black selected"></div>
+      <div class="color random-color"></div>
+      <div class="color random-color"></div>
+      <div class="color random-color"></div>
+      <div class="color random-color"></div>
+      <div class="color random-color"></div>
+      <div class="color random-color"></div>
+      <div class="color random-color"></div>
+    </div>
+    <div class="input-container">
+      <input
+        placeholder="Tamanho"
+        id="board-size"
+        value="5"
+        type="text"
+        min="1"
+        max="50"
+      />
+    </div>
+    <div class="button-container">
+      <button id="generate-board">Criar Quadro</button>
+      <button id="clear-board">Limpar</button>
+    </div>
+    <div id="pixel-board"></div>
+  </body>
+</html>
